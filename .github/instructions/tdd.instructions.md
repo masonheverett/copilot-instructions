@@ -24,7 +24,7 @@ If uncertain, **use TDD**.
 
 Follow this sequence strictly:
 
-1. **Red** — Write a failing test
+1. **Red** — Write a test that executes and fails due to an assertion
 2. **Green** — Implement the minimal fix
 3. **Refactor** — Improve structure without changing behavior
 
@@ -34,7 +34,7 @@ Do not skip or reorder steps.
 
 ## Red Phase Rule (Critical)
 
-**Prefer failing assertions over missing-symbol errors.**
+**Red means assertion failure, not execution errors.**
 
 - Create minimal stubs so tests run and **fail on assertions**, not on syntax errors or missing symbols.
 - Error-first tests are acceptable **only** when existence itself is the requirement (e.g., public API). Move to assertion-based tests immediately after.
@@ -92,6 +92,7 @@ Optimize for fast feedback, not batch debugging.
 - Over-mock instead of using real collaborators
 - Write tests that pass even if the implementation is removed
 - Skip tests because the change is “small”
+- Treat import, naming, or wiring errors as a valid Red state
 
 ---
 

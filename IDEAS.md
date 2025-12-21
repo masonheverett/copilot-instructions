@@ -24,3 +24,8 @@ v1.0 — Seven Cs Framework Hardening
 Clarified evaluation order based on failure cost.
   - Strengthened per-C definitions with explicit criteria for what “5 stars” means.
   - Added an anti-patterns section to prevent common misuse and score inflation.
+
+### 2025-12-21
+v1.0 - Test Driven Development Hardening
+- Update Red state to be more assertive and clear about the requirement for assertion failures, not just any execution error.
+- Add anti-pattern entry on the Red phase about creating tests that fail due to syntax errors or missing symbols.
